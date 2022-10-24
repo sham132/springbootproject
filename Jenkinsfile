@@ -1,11 +1,11 @@
 pipeline {
-    agent {  label "master"    }
+    agent any
     
     stages {
         // Step 1
         stage('SCM') {
                 steps {
-                    git 'https://gitlab.com/ehtasham_ulhaq/demoproject.git'
+                    git 'https://github.com/sham132/springbootproject.git'
                 }        
         }
         // Step 2
